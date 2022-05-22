@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.MainPet.MainPetAdoptionFragment">
+
+    <ImageView
+        android:id="@+id/optionImageBreeding"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="#1EE8D4"
+        android:src="@drawable/spinner_cat"
+        app:layout_constraintBottom_toTopOf="@+id/twJustBorder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/twDistance5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3km uzakta"
+        android:textColor="#3F51B5"
+        app:layout_constraintBottom_toTopOf="@+id/petPhoto"
+        app:layout_constraintEnd_toEndOf="@+id/petPhoto"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/petPhoto"
+        app:layout_constraintTop_toBottomOf="@+id/twJustBorder" />
+
+    <TextView
+        android:id="@+id/twJustBorder"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/tw_border"
+        android:backgroundTint="#1ADFF8"
+        android:hapticFeedbackEnabled="false"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/twDistance5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerPetOptionsForBreeding" />
+
+    <TextView
+        android:id="@+id/uuserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Zehra Yılmaz"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ivProfilePhotoFMessageCard"
+        app:layout_constraintStart_toEndOf="@+id/ivProfilePhotoFMessageCard"
+        app:layout_constraintTop_toTopOf="@+id/ivProfilePhotoFMessageCard" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivProfilePhotoFMessageCard"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/user_pp_example3"
+        app:circularflow_defaultRadius="500dp"
+        app:layout_constraintBottom_toBottomOf="@+id/twJustBorder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/twJustBorder" />
+
+    <ImageView
+        android:id="@+id/petPhoto"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:src="@drawable/cat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/twDistance5" />
+
+    <ImageView
+        android:id="@+id/imageNextPhoto"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/next_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonseeAllProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonseeAllProfile"
+        app:layout_constraintTop_toTopOf="@+id/buttonseeAllProfile" />
+
+    <ImageView
+        android:id="@+id/imagePrevious"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/previous_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonseeAllProfile"
+        app:layout_constraintEnd_toStartOf="@+id/buttonseeAllProfile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonseeAllProfile" />
+
+    <TextView
+        android:id="@+id/petName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alice In Dreamland"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonseeAllProfile"
+        app:layout_constraintEnd_toEndOf="@+id/petPhoto"
+        app:layout_constraintStart_toStartOf="@+id/petPhoto"
+        app:layout_constraintTop_toBottomOf="@+id/petPhoto" />
+
+    <Button
+        android:id="@+id/buttonseeAllProfile"
+        android:layout_width="240dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#1ADFF8"
+        android:text="Tüm Profili Gör"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:cornerRadius="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/petName" />
+
+    <TextView
+        android:id="@+id/twNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sonraki"
+        app:layout_constraintEnd_toEndOf="@+id/imageNextPhoto"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageNextPhoto"
+        app:layout_constraintTop_toBottomOf="@+id/imageNextPhoto" />
+
+    <TextView
+        android:id="@+id/twPreviousPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Önceki"
+        app:layout_constraintEnd_toEndOf="@+id/imagePrevious"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imagePrevious"
+        app:layout_constraintTop_toBottomOf="@+id/imagePrevious" />
+
+    <Spinner
+        android:id="@+id/spinnerPetOptionsForBreeding"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:background="#1EE8D4"
+        app:layout_constraintBottom_toTopOf="@+id/twJustBorder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/optionImageBreeding"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageReportUserBreeding"
+        android:layout_width="25dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/ic_baseline_warning_24"
+        app:layout_constraintBottom_toTopOf="@+id/twDistance5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerPetOptionsForBreeding" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

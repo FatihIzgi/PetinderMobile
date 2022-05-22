@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mainPetAdoptionFragment"
+        android:icon="@drawable/ic_adoption"
+        android:title="Sahiplendirme"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/mainPetBreedingFragment"
+        android:icon="@drawable/ic_breeding"
+        android:title="Çiftleştirme"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/mainPetAidFragment"
+        android:icon="@drawable/ic_feeding_aid"
+        android:title="Yardımlaşma"
+        app:showAsAction="always" />
+</menu>

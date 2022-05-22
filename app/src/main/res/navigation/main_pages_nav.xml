@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_pages_nav"
+    app:startDestination="@id/mainAdoptionPageFragment">
+
+    <fragment
+        android:id="@+id/mainAdoptionPageFragment"
+        android:name="com.foth.petinder.Fragments.MainPage.MainHomePageFragment"
+        android:label="fragment_main_adoption_page"
+        tools:layout="@layout/fragment_main_home_page" />
+    <fragment
+        android:id="@+id/mainMessagesPageFragment"
+        android:name="com.foth.petinder.Fragments.MainPage.MainMessagesPageFragment"
+        android:label="fragment_messages_page"
+        tools:layout="@layout/fragment_main_messages_page" />
+    <fragment
+        android:id="@+id/mainProfilePageFragment"
+        android:name="com.foth.petinder.Fragments.MainPage.MainProfilePageFragment"
+        android:label="fragment_main_profile_page"
+        tools:layout="@layout/fragment_main_profile_page" />
+</navigation>

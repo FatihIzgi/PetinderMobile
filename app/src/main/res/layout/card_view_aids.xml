@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:layout_margin="4dp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewAids"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/twJustBorder3"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@drawable/tw_border"
+                android:backgroundTint="#89D9FD"
+                android:hapticFeedbackEnabled="false"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivProfilePhotoFAidCard"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/user_pp_example1"
+                app:circularflow_defaultRadius="500dp"
+                app:layout_constraintBottom_toBottomOf="@id/twJustBorder3"
+                app:layout_constraintLeft_toLeftOf="@id/twJustBorder3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/twJustBorder3" />
+
+            <TextView
+                android:id="@+id/aidLocationAids"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="İzmir/Bornova"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@id/ivProfilePhotoFAidCard"
+                app:layout_constraintTop_toTopOf="@id/ivProfilePhotoFAidCard" />
+
+            <TextView
+                android:id="@+id/twAidExplanationAids"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:maxLines="2"
+                android:text="Evcil hayvanımın mama ihtiyacını karşılayabilmek için desteğe ihtiyacım var."
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/ivProfilePhotoFAidCard"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivProfilePhotoFAidCard"
+                app:layout_constraintTop_toBottomOf="@id/aidLocationAids"
+                app:layout_constraintVertical_bias="0.421" />" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

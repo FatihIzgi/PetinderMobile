@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/drawable-v24/ic_adoptation.xml" value="0.37083333333333335" />
+        <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/drawable-v24/ic_baseline_navigate_before_24.xml" value="0.13177083333333334" />
+        <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/drawable-v24/ic_baseline_navigate_next_24.xml" value="0.13177083333333334" />
+        <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/drawable-v24/tw_border.xml" value="0.11851851851851852" />
+        <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/drawable/ic_adoption.xml" value="0.21354166666666666" />
+        <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/drawable/ic_aid.xml" value="0.37083333333333335" />
+        <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/drawable/ic_breeding.xml" value="0.21354166666666666" />
+        <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/drawable/ic_feeding_aid.xml" value="0.37083333333333335" />
+        <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/drawable/ic_icons8_pet_64.xml" value="0.37083333333333335" />
+        <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/drawable/ic_launcher_background.xml" value="0.21354166666666666" />
+        <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/layout/activity_main.xml" value="0.34010416666666665" />
+        <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/layout/card_view_aids.xml" value="0.3546875" />
+        <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/layout/card_view_messages.xml" value="0.3546875" />
+        <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/layout/fragment_aid.xml" value="0.3546875" />
+        <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/layout/fragment_contact_via_message.xml" value="0.3546875" />
+        <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/layout/fragment_home_page.xml" value="0.3541666666666667" />
+        <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/layout/fragment_main_adoption_page.xml" value="0.25" />
+        <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/layout/fragment_main_home_page.xml" value="0.33" />
+        <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/layout/fragment_main_messages_page.xml" value="0.35280797101449274" />
+        <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/layout/fragment_main_pet_breeding.xml" value="0.3546875" />
+        <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/layout/fragment_main_profile_page.xml" value="0.33242753623188404" />
+        <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/layout/fragment_mainpet_adoption.xml" value="0.33" />
+        <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/layout/fragment_mainpet_aid.xml" value="0.3546875" />
+        <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/layout/fragment_mainpet_breeding.xml" value="0.33" />
+        <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/layout/fragment_messages_page.xml" value="0.3546875" />
+        <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/layout/fragment_pet_adaption.xml" value="0.3546875" />
+        <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/layout/fragment_pet_adoption.xml" value="0.3546875" />
+        <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/layout/fragment_pet_aid.xml" value="0.3546875" />
+        <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/layout/fragment_pet_breeding.xml" value="0.3546875" />
+        <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/layout/fragment_pet_empty_message.xml" value="0.3546875" />
+        <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/layout/fragment_reporting.xml" value="0.3546875" />
+        <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/menu/bottom_nav_options.xml" value="0.3546875" />
+        <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/menu/up_nav_options.xml" value="0.5" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

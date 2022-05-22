@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_pet_nav"
+    app:startDestination="@id/mainPetAdoptionFragment">
+    <fragment
+        android:id="@+id/mainPetAdoptionFragment"
+        android:name="com.foth.petinder.Fragments.MainPet.MainPetAdoptionFragment"
+        android:label="fragment_pet_adoption"
+        tools:layout="@layout/fragment_mainpet_adoption" />
+    <fragment
+        android:id="@+id/mainPetAidFragment"
+        android:name="com.foth.petinder.Fragments.MainPet.MainPetAidFragment"
+        android:label="fragment_pet_aid"
+        tools:layout="@layout/fragment_mainpet_aid" />
+    <fragment
+        android:id="@+id/mainPetBreedingFragment"
+        android:name="com.foth.petinder.Fragments.MainPet.MainPetBreedingFragment"
+        android:label="fragment_pet_breeding"
+        tools:layout="@layout/fragment_mainpet_breeding" />
+</navigation>

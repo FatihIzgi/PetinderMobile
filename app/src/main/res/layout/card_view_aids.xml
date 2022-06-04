@@ -29,44 +29,33 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/ivProfilePhotoFAidCard"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginStart="8dp"
-                android:src="@drawable/user_pp_example1"
-                app:circularflow_defaultRadius="500dp"
-                app:layout_constraintBottom_toBottomOf="@id/twJustBorder3"
-                app:layout_constraintLeft_toLeftOf="@id/twJustBorder3"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@id/twJustBorder3" />
-
             <TextView
                 android:id="@+id/aidLocationAids"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
+                android:layout_marginStart="8dp"
                 android:text="İzmir/Bornova"
                 android:textColor="@color/black"
                 android:textSize="16dp"
                 android:textStyle="bold"
-                app:layout_constraintLeft_toRightOf="@id/ivProfilePhotoFAidCard"
-                app:layout_constraintTop_toTopOf="@id/ivProfilePhotoFAidCard" />
+                app:layout_constraintBottom_toTopOf="@+id/twAidExplanationAids"
+                app:layout_constraintStart_toStartOf="@+id/twJustBorder3"
+                app:layout_constraintTop_toTopOf="@id/twJustBorder3" />
 
             <TextView
                 android:id="@+id/twAidExplanationAids"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
                 android:maxLines="2"
                 android:text="Evcil hayvanımın mama ihtiyacını karşılayabilmek için desteğe ihtiyacım var."
                 android:textColor="@color/black"
                 android:textSize="15sp"
-                app:layout_constraintBottom_toBottomOf="@+id/ivProfilePhotoFAidCard"
+                app:layout_constraintBottom_toBottomOf="@id/twJustBorder3"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/ivProfilePhotoFAidCard"
-                app:layout_constraintTop_toBottomOf="@id/aidLocationAids"
-                app:layout_constraintVertical_bias="0.421" />" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/aidLocationAids" />" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 </LinearLayout>

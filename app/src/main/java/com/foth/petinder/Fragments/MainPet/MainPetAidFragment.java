@@ -11,10 +11,11 @@ import android.view.ViewGroup;
 
 import com.foth.petinder.Classes.Aid.Aid;
 import com.foth.petinder.Classes.Aid.AidRVAdapter;
-import com.foth.petinder.Classes.Message.Message;
+import com.foth.petinder.Classes.ExampleObjectsProvider;
+import com.foth.petinder.Classes.User.User;
+import com.foth.petinder.Fragments.Aid.CreatingNewAidFragment;
 import com.foth.petinder.R;
 import com.foth.petinder.databinding.FragmentMainpetAidBinding;
-import com.foth.petinder.databinding.FragmentPetAidBinding;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +23,6 @@ import java.util.List;
 public class MainPetAidFragment extends Fragment {
 
     private FragmentMainpetAidBinding binding;
-    private List<Aid> aids = new ArrayList<>();
     private AidRVAdapter adapter;
 
     @Override
@@ -32,24 +32,35 @@ public class MainPetAidFragment extends Fragment {
         binding = FragmentMainpetAidBinding.inflate(inflater,container,false);
         View view = binding.getRoot();
 
-        aids.add(new Aid("user_pp_example1","İzmir/Bornova","Evil hayvanımın mama ihtiyacını karşılayabilmek için mama desteğine ihtiyacım var."));
-        aids.add(new Aid("user_pp_example2","İstanbul/Pendik","Sokakata bulduğum bu 2 kedinin veterinere götürülmesi gerekmektedir."));
-        aids.add(new Aid("user_pp_example3","İzmir/Karşıyaka","Mahallemizdeki başıboş köpekler için aşı ihtiyacımız vardır."));
-        aids.add(new Aid("user_pp_example4","Bursa/Osmangazi","Papağanlar için getirilen xXx yeminin temin edilememesi sonucu zor durumda kaldım."));
-        aids.add(new Aid("user_pp_example5","Eskişehir/Sivrihisar","Sokakataki 2 kedinin veterinere götürülmesi gerekmektedir."));
-        aids.add(new Aid("user_pp_example6","Rize/Çayeli","Dün sokak köpeklerinin dövüştürüldüğüne dair alınan haber doğrultusunda hukuki desteğe ihtiyacım var."));
-        aids.add(new Aid("user_pp_example7","Hatay/Samandağ","Kedim için tırmalama tahtası almak istiyorum fakat öğrenciyim ve desteklerinizi bekliyorum."));
+        binding.floatingActionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                loadFragment(new CreatingNewAidFragment());
+            }
+        });
 
-        adapter = new AidRVAdapter(getContext(),aids);
+
+        adapter = new AidRVAdapter(getContext(),CreatingNewAidFragment.aidList);
 
         binding.AidsRv.setHasFixedSize(true);
         binding.AidsRv.setLayoutManager(new LinearLayoutManager(getContext()));
 
-        adapter = new AidRVAdapter(getContext(),aids);
+        adapter = new AidRVAdapter(getContext(),CreatingNewAidFragment.aidList);
 
         binding.AidsRv.setAdapter(adapter);
 
 
         return view;
     }
+    public boolean loadFragment(Fragment fragment) {
+        if (fragment != null) {
+            getFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.fragmentCVf, fragment)
+                    .commit();
+            return true;
+        }
+        return false;
+    }
+
 }

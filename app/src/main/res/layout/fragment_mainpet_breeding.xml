@@ -13,7 +13,7 @@
         android:layout_marginTop="2dp"
         android:layout_marginBottom="2dp"
         android:background="#1EE8D4"
-        android:src="@drawable/spinner_cat"
+        android:src="@drawable/spinner_dog"
         app:layout_constraintBottom_toTopOf="@+id/twJustBorder"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

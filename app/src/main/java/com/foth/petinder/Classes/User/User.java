@@ -11,6 +11,9 @@ public class User {
     private List<Pet> pets;
 
 
+    public User() {
+    }
+
     public User(int id, String name) {
         this.id = id;
         this.name = name;

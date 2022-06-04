@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FBF2F3"
     tools:context=".Fragments.MainPet.MainPetAdoptionFragment">
 
     <ImageView
@@ -60,7 +61,7 @@
         android:layout_width="60dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
-        android:src="@drawable/user_pp_example1"
+        android:src="@drawable/user_pp_example2"
         app:circularflow_defaultRadius="500dp"
         app:layout_constraintBottom_toBottomOf="@+id/twJustBorder"
         app:layout_constraintStart_toStartOf="parent"

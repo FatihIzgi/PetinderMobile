@@ -1,23 +1,25 @@
 package com.foth.petinder.Classes.Aid;
 
+import com.foth.petinder.Classes.User.User;
+
 public class Aid {
 
-    private String profilePhoto;
+    private User user;
     private String location;
     private String explanation;
 
-    public Aid(String profilePhoto, String location, String explanation) {
-        this.profilePhoto = profilePhoto;
+    public Aid(User user, String location, String explanation) {
+        this.user = user;
         this.location = location;
         this.explanation = explanation;
     }
 
-    public String getProfilePhoto() {
-        return profilePhoto;
+    public void setUser(User user) {
+        this.user = user;
     }
 
-    public void setProfilePhoto(String profilePhoto) {
-        this.profilePhoto = profilePhoto;
+    public User getUser() {
+        return user;
     }
 
     public String getLocation() {

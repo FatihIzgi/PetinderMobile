@@ -29,11 +29,11 @@ public class MainMessagesPageFragment extends Fragment {
         binding = FragmentMainMessagesPageBinding.inflate(inflater, container, false);
         View view = binding.getRoot();
 
-        messages.add(new Message("user_pp_example1","Buse Yıldırım","Merhabalar, ben sahiplendirmek istediğiniz köpek hakkında konuşmak istiyorum."));
-        messages.add(new Message("user_pp_example2","Zehra Yılmaz","Verdiğiniz adreste görüşmek üzere :)"));
-        messages.add(new Message("user_pp_example3","Gülseren Toğlan","Söylediğim gibi ."));
-        messages.add(new Message("user_pp_example4","Ecem Mollolar","Sizinle tekrar iletişime geçeceğim"));
-        messages.add(new Message("user_pp_example1","Ece Naz Fidan","Fotoğraflarda belirttiğim üzere yapmış olduğunuz mama bağıları gerekli yerlere ulaştı."));
+        messages.add(new Message("fizgi","Fatih İzgi","Merhabalar, ben sahiplendirmek istediği..."));
+        messages.add(new Message("user_pp_example5","Zehra Mollalar","Verdiğiniz adreste görüşmek üzere :)"));
+        messages.add(new Message("user_pp_example6","Buse Eski","Veteriner masraflarına yardımcı olab..."));
+        messages.add(new Message("user_pp_example4","İdil Kuşçu","En kısa zamanda yazacağım."));
+        messages.add(new Message("kasartarkan","Tarkan Peynirci","Mama desteğiniz için çok teşekkürler :))"));
 
         binding.messagesRV.setHasFixedSize(true);
         binding.messagesRV.setLayoutManager(new LinearLayoutManager(getContext()));

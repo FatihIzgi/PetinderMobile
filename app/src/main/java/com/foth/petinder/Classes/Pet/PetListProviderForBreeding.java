@@ -13,7 +13,6 @@ public class PetListProviderForBreeding {
     private static ArrayList<Pet> spiders = new ArrayList<>();
     private static ArrayList<Pet> hamsters = new ArrayList<>();
     private static ArrayList<Pet> others = new ArrayList<>();
-    private static ArrayList<Pet> chosenList = new ArrayList<>();
 
     public static void addAnimalToTheList(Pet pet){
         if(pet.getCategory().equals("Köpek")){
@@ -75,7 +74,7 @@ public class PetListProviderForBreeding {
         }
     }
 
-    public static Pet getTheCurrentPet(String option, int counter){
+    public static Pet getTheCurrentPetForBreeding(String option, int counter){
         if(counter>=0 && counter<getTheChosenPetList(option).size()){
             return getTheChosenPetList(option).get(counter);
         }

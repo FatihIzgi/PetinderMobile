@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 public class PetListProviderForAdoption {
 
-    private static ArrayList<Pet> allPets = new ArrayList<>();
     private static ArrayList<Pet> dogs = new ArrayList<>();
     private static ArrayList<Pet> cats = new ArrayList<>();
     private static ArrayList<Pet> fish = new ArrayList<>();
@@ -14,7 +13,6 @@ public class PetListProviderForAdoption {
     private static ArrayList<Pet> spiders = new ArrayList<>();
     private static ArrayList<Pet> hamsters = new ArrayList<>();
     private static ArrayList<Pet> others = new ArrayList<>();
-    private static ArrayList<Pet> chosenList = new ArrayList<>();
 
     public static void addAnimalToTheAdoptionList(Pet pet){
         if(pet.getCategory().equals("Köpek")){

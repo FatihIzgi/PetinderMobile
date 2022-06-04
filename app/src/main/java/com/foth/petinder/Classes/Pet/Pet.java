@@ -2,23 +2,26 @@ package com.foth.petinder.Classes.Pet;
 
 import com.foth.petinder.Classes.User.User;
 
+import java.util.ArrayList;
+
 public class Pet {
 
     private int id;
     private User user;
     private String name;
-    private String photo;
+    private ArrayList<String> photos;
     private String category;
     private boolean forAdoption;
     private boolean forBreeding;
 
+    public Pet() {
+    }
 
-
-    public Pet(int id, User user, String name, String photo, String category, boolean forAdoption, boolean forBreeding) {
+    public Pet(int id, User user, String name, ArrayList<String> photos, String category, boolean forAdoption, boolean forBreeding) {
         this.id = id;
         this.user = user;
         this.name = name;
-        this.photo = photo;
+        this.photos = photos;
         this.category = category;
         this.forAdoption = forAdoption;
         this.forBreeding = forBreeding;
@@ -55,12 +58,28 @@ public class Pet {
         this.name = name;
     }
 
-    public String getPhoto() {
-        return photo;
+    public ArrayList<String> getPhotos() {
+        return photos;
     }
 
-    public void setPhoto(String photo) {
-        this.photo = photo;
+    public void setPhotos(ArrayList<String> photos) {
+        this.photos = photos;
+    }
+
+    public boolean isForAdoption() {
+        return forAdoption;
+    }
+
+    public void setForAdoption(boolean forAdoption) {
+        this.forAdoption = forAdoption;
+    }
+
+    public boolean isForBreeding() {
+        return forBreeding;
+    }
+
+    public void setForBreeding(boolean forBreeding) {
+        this.forBreeding = forBreeding;
     }
 
     public String getCategory() {

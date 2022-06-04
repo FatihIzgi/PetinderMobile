@@ -8,18 +8,18 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.foth.petinder.R;
-import com.foth.petinder.databinding.FragmentPetAidBinding;
+import com.foth.petinder.databinding.FragmentAidBinding;
+
 
 public class AidFragment extends Fragment {
 
-    private FragmentPetAidBinding binding;
+    private FragmentAidBinding binding;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        binding = FragmentPetAidBinding.inflate(inflater,container,false);
+        binding = FragmentAidBinding.inflate(inflater,container,false);
         View view = binding.getRoot();
 
 

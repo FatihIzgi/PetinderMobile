@@ -37,14 +37,13 @@
         android:id="@+id/uuserName2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:text="Aidra Fox"
+        android:text="Buse Yılmaz"
         android:textColor="@color/black"
         android:textSize="22dp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/twJustBorder2"
         app:layout_constraintLeft_toRightOf="@id/ivProfilePhotoFContact"
-        app:layout_constraintTop_toTopOf="@id/twJustBorder2"
-        app:layout_constraintBottom_toBottomOf="@id/twJustBorder2"/>
+        app:layout_constraintTop_toTopOf="@id/twJustBorder2" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/ivProfilePhotoFContact"

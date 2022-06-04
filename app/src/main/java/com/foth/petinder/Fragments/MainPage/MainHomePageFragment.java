@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.foth.petinder.Classes.FragmentLoader.FragmentLoader;
 import com.foth.petinder.Fragments.MainPet.MainPetAdoptionFragment;
 import com.foth.petinder.Fragments.MainPet.MainPetAidFragment;
 import com.foth.petinder.Fragments.MainPet.MainPetBreedingFragment;

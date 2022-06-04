@@ -4,13 +4,17 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Toast;
 
 import com.foth.petinder.Classes.ExampleObjectsProvider;
+import com.foth.petinder.Classes.FragmentLoader.FragmentLoader;
 import com.foth.petinder.Classes.Pet.Pet;
 import com.foth.petinder.Classes.Pet.PetListProviderForAdoption;
 import com.foth.petinder.Classes.Pet.PetOptions;
@@ -28,6 +32,7 @@ public class MainPetAdoptionFragment extends Fragment {
     private ArrayAdapter<String> adapter;
     private int petListIndex = 0;
     private ArrayList<Pet> currentPetList;
+    private static int controller = 1;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -38,8 +43,10 @@ public class MainPetAdoptionFragment extends Fragment {
         View view = binding.getRoot();
 
         arrangeSpinner();
-        ExampleObjectsProvider.provideRandomUserAndPetObjectsForAdoption();
-
+        if(controller==1){
+            ExampleObjectsProvider.provideRandomUserAndPetObjectsForAdoption();
+            controller = 0;
+        }
 
         binding.spinnerPetOptionsForadoption.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -47,9 +54,34 @@ public class MainPetAdoptionFragment extends Fragment {
                 currentPetList = PetListProviderForAdoption.getTheChosenAdoptionPetList(binding.spinnerPetOptionsForadoption.getSelectedItem().toString());
                 new PetOptions().setIcons(binding.optionImageAdopting,binding.spinnerPetOptionsForadoption.getSelectedItem().toString());
                 if(currentPetList.size()==0){
-                    loadFragmentForEmptyMessage();
+                    binding.twDistance5.setVisibility(View.INVISIBLE);
+                    binding.twJustBorder.setVisibility(View.INVISIBLE);
+                    binding.twNext.setVisibility(View.INVISIBLE);
+                    binding.twPreviousPhoto.setVisibility(View.INVISIBLE);
+                    binding.buttonseeAllProfile.setVisibility(View.INVISIBLE);
+                    binding.petName.setVisibility(View.INVISIBLE);
+                    binding.imageReportUserAdoption.setVisibility(View.INVISIBLE);
+                    binding.uuserName.setVisibility(View.INVISIBLE);
+                    binding.ivProfilePhotoFMessageCard.setVisibility(View.INVISIBLE);
+                    binding.petPhoto.setVisibility(View.INVISIBLE);
+
+                    View toastView = getLayoutInflater().inflate(R.layout.toast_massage_view,null);
+                    Toast toast = Toast.makeText(getContext(),"Bu kategoride hiçbir hayvan bulunmamaktadır.",Toast.LENGTH_LONG);
+                    toast.setView(toastView);
+                    toast.setGravity(Gravity.CENTER,0,0);
+                    toast.show();
                 }
                 else {
+                    binding.twDistance5.setVisibility(View.VISIBLE);
+                    binding.twJustBorder.setVisibility(View.VISIBLE);
+                    binding.twNext.setVisibility(View.VISIBLE);
+                    binding.twPreviousPhoto.setVisibility(View.VISIBLE);
+                    binding.buttonseeAllProfile.setVisibility(View.VISIBLE);
+                    binding.petName.setVisibility(View.VISIBLE);
+                    binding.uuserName.setVisibility(View.VISIBLE);
+                    binding.ivProfilePhotoFMessageCard.setVisibility(View.VISIBLE);
+                    binding.petPhoto.setVisibility(View.VISIBLE);
+
                     petListIndex = 0;
                     loadPage(currentPetList.get(petListIndex));
                 }
@@ -57,9 +89,9 @@ public class MainPetAdoptionFragment extends Fragment {
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
-                currentPetList = PetListProviderForAdoption.getTheChosenAdoptionPetList("Köpek");
-                petListIndex = 0;
-                loadPage(currentPetList.get(petListIndex));
+                //currentPetList = PetListProviderForAdoption.getTheChosenAdoptionPetList("Köpek");
+                //petListIndex = 0;
+                //loadPage(currentPetList.get(petListIndex));
             }
         });
 
@@ -67,6 +99,13 @@ public class MainPetAdoptionFragment extends Fragment {
         binding.buttonseeAllProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if(petListIndex!=0){
+                    PetAdaptionFragment.currentPet = currentPetList.get(--petListIndex);
+                }
+                else{
+                    PetAdaptionFragment.currentPet = currentPetList.get(petListIndex);
+                }
+
                 loadFragment(new PetAdaptionFragment());
             }
         });
@@ -93,8 +132,6 @@ public class MainPetAdoptionFragment extends Fragment {
             @Override
             public void onClick(View view) {
 
-
-
             }
         });
 
@@ -108,9 +145,10 @@ public class MainPetAdoptionFragment extends Fragment {
         binding.spinnerPetOptionsForadoption.setAdapter(adapter);
 
     }
+
     public boolean loadFragment(Fragment fragment) {
         if (fragment != null) {
-            getFragmentManager()
+            getParentFragmentManager()
                     .beginTransaction()
                     .replace(R.id.fragmentCVf, fragment)
                     .commit();
@@ -118,6 +156,13 @@ public class MainPetAdoptionFragment extends Fragment {
         }
         return false;
     }
+
+    public void loadPage(Pet pet){
+        binding.uuserName.setText(pet.getUser().getName());
+        binding.petPhoto.setImageResource(getResources().getIdentifier(pet.getPhotos().get(0), "drawable",getContext().getPackageName()));
+        binding.petName.setText(pet.getName());
+    }
+
     public boolean loadFragmentForEmptyMessage() {
         Fragment fragment = new PetEmptyMessageFragment();
 
@@ -129,12 +174,6 @@ public class MainPetAdoptionFragment extends Fragment {
             return true;
         }
         return false;
-    }
-
-    public void loadPage(Pet pet){
-        binding.uuserName.setText(pet.getUser().getName());
-        binding.petPhoto.setImageResource(getResources().getIdentifier(pet.getPhoto(),"drawable",getContext().getPackageName()));
-        binding.petName.setText(pet.getName());
     }
 
 }

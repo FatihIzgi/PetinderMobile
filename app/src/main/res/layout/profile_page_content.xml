@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/profile_page_header_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_page_header"
+                android:layout_marginBottom="20dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right|center_vertical"
+                android:src="@drawable/edit_icon" />
+        </RelativeLayout>
+
+
+        <RelativeLayout style="@style/profile_details_layout">
+
+            <ImageView
+                android:id="@+id/nameImageView"
+                style="@style/profile_page_small_pics"
+                android:src="@drawable/person_icon" />
+            
+            <TextView
+                android:id="@+id/nameTextView"
+                android:text="Name"
+                android:layout_toRightOf="@id/nameImageView"
+                style="@style/profileDetailsTextMain"/>
+
+            <TextView
+                style="@style/profileDetailsMiniText"
+                android:layout_toRightOf="@id/nameImageView"
+                android:text="pet owner" />
+
+        </RelativeLayout>
+
+        <View style="@style/profileDetailsView" />
+
+        <RelativeLayout style="@style/profile_details_layout">
+
+            <ImageView
+                android:id="@+id/mobileImageView"
+                style="@style/profile_page_small_pics"
+                android:src="@drawable/phone_icon" />
+
+            <TextView
+                android:id="@+id/mobileTextView"
+                android:text="Telefon No"
+                android:layout_toRightOf="@id/mobileImageView"
+                style="@style/profileDetailsTextMain"/>
+
+            <TextView
+                style="@style/profileDetailsMiniText"
+                android:layout_toRightOf="@id/mobileImageView"
+                android:text="+90 538 6852" />
+
+        </RelativeLayout>
+
+        <View style="@style/profileDetailsView" />
+
+        <RelativeLayout style="@style/profile_details_layout">
+
+            <ImageView
+                android:id="@+id/emailImageView"
+                style="@style/profile_page_small_pics"
+                android:src="@drawable/email_icon" />
+
+            <TextView
+                android:id="@+id/emailTextView"
+                android:text="Mail"
+                android:layout_toRightOf="@id/emailImageView"
+                style="@style/profileDetailsTextMain"/>
+
+            <TextView
+                style="@style/profileDetailsMiniText"
+                android:layout_toRightOf="@id/emailImageView"
+                android:text="missed_girl@gmail.com" />
+
+        </RelativeLayout>
+
+        <View style="@style/profileDetailsView" />
+
+        <RelativeLayout style="@style/profile_details_layout">
+
+            <ImageView
+                android:id="@+id/addressImageView"
+                style="@style/profile_page_small_pics"
+                android:src="@drawable/address_icon" />
+
+            <TextView
+                android:id="@+id/addressTextView"
+                android:text="Adres"
+                android:layout_toRightOf="@id/addressImageView"
+                style="@style/profileDetailsTextMain"/>
+
+            <TextView
+                style="@style/profileDetailsMiniText"
+                android:layout_toRightOf="@id/addressImageView"
+                android:text="Fusce Rd. Frederick Nebraska 20620" />
+
+        </RelativeLayout>
+
+        <View style="@style/profileDetailsView" />
+
+        <RelativeLayout style="@style/profile_details_layout">
+
+            <ImageView
+                android:id="@+id/birthdayImageView"
+                style="@style/profile_page_small_pics"
+                android:src="@drawable/calendar_icon" />
+
+            <TextView
+                android:id="@+id/birthdayTextView"
+                android:text="Doğum Günü"
+                android:layout_toRightOf="@id/birthdayImageView"
+                style="@style/profileDetailsTextMain"/>
+
+            <TextView
+                style="@style/profileDetailsMiniText"
+                android:layout_toRightOf="@id/birthdayImageView"
+                android:text="18/03/1996" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            >
+
+            <TextView
+                style="@style/profile_page_header_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Evcil Hayvanlarım"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/my_pets_rv"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"/>
+
+            <TextView
+                android:text="Yeni Evcil Hayvan"
+                style="@style/profilePageNewPetStyledButton"/>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+
+            android:layout_height="30dp"/>
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

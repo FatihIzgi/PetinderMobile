@@ -16,6 +16,7 @@
         <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/layout/activity_main.xml" value="0.34010416666666665" />
         <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/layout/card_view_aids.xml" value="0.3546875" />
         <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/layout/card_view_messages.xml" value="0.3546875" />
+        <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/layout/card_view_user_pets.xml" value="0.15" />
         <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/layout/fragment_aid.xml" value="0.3546875" />
         <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/layout/fragment_contact_via_message.xml" value="0.3546875" />
         <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/layout/fragment_creating_new_aid.xml" value="0.340625" />
@@ -24,8 +25,8 @@
         <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/layout/fragment_main_home_page.xml" value="0.33" />
         <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/layout/fragment_main_messages_page.xml" value="0.35280797101449274" />
         <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/layout/fragment_main_pet_breeding.xml" value="0.3546875" />
-        <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/layout/fragment_main_profile_page.xml" value="0.33242753623188404" />
-        <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/layout/fragment_mainpet_adoption.xml" value="0.33" />
+        <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/layout/fragment_main_profile_page.xml" value="0.1" />
+        <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/layout/fragment_mainpet_adoption.xml" value="0.1" />
         <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/layout/fragment_mainpet_aid.xml" value="0.3546875" />
         <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/layout/fragment_mainpet_breeding.xml" value="0.33" />
         <entry key="..\:/Users/faizg/AndroidStudioProjects/Petinder/app/src/main/res/layout/fragment_messages_page.xml" value="0.3546875" />
